@@ -4,6 +4,25 @@ def solution(gems):
     gems_without_dup = set(gems)
     answer_list = []
 
+    # first try
+    gems_without_dup_copy = gems_without_dup.copy()
+    end_idx = 0
+
+    for iter_gem_idx in range(0, len(gems)):
+        current_gem = gems[iter_gem_idx]
+        if current_gem in gems_without_dup_copy:
+            gems_without_dup_copy.remove(current_gem)
+
+        if len(gems_without_dup_copy) == 0:
+            if iter_gem_idx == 0:
+                return [1, 1]
+
+            answer_list.append([1, iter_gem_idx + 1])
+            end_idx = iter_gem_idx
+
+    # second~ try
+    for start_idx in range(1, )
+
     for start_gem_idx in range(0, len(gems)):
         gems_without_dup_copy = gems_without_dup.copy()
 
