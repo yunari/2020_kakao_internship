@@ -1,2 +1,2 @@
-/venv
-/.idea
+/programmers/.idea/*
+/programmers/venv/*
