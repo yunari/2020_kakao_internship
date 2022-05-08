@@ -1,4 +1,4 @@
-class Solution {
+class Solution_making_prime_number {
     fun isPrimeNumber(number: Int): Boolean {
         if (number == 0 || number == 1)
             return false
@@ -27,6 +27,6 @@ class Solution {
 }
 
 fun main() {
-    val sol: Solution = Solution()
+    val sol: Solution_making_prime_number = Solution_making_prime_number()
     println(sol.solution(intArrayOf(1,2,7,6,4)))
 }
